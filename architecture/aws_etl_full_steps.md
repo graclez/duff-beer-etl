@@ -5,7 +5,7 @@ Este documento detalla paso a paso cómo se implementó el pipeline ETL para Duf
 
 ---
 
-## 🧱 Servicios utilizados:
+## Servicios utilizados:
 
 - **Amazon S3**: Ingesta y almacenamiento
 - **AWS Lambda**: Procesamiento ETL
