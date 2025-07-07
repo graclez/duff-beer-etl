@@ -18,7 +18,7 @@ except Exception as e:
 
 @app.route('/orders/<int:client_id>', methods=['GET'])
 def get_orders_by_client(client_id):
-    print(f"🔍 Buscando pedidos del cliente ID: {client_id}")
+    print(f"Buscando pedidos del cliente ID: {client_id}")
     result = data[data['client_id'] == client_id]
 
     if result.empty:
