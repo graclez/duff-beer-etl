@@ -6,7 +6,7 @@ Este proyecto simula una arquitectura serverless completa en AWS para procesar a
 ---
 
 
-## 🔧ervicios simulados y roles esperados
+## Servicios simulados y roles esperados
 
 | Etapa                    | Servicio Simulado (Local) | Equivalente AWS Real          |
 |--------------------------|---------------------------|-------------------------------|
@@ -64,7 +64,7 @@ SELECT status, COUNT(*) FROM orders GROUP BY status;
 
 ### Endpoint implementado:
 
-- `GET /orders/<client_id>` → retorna todos los pedidos de un cliente
+- `GET /orders/<client_id>` �?retorna todos los pedidos de un cliente
 
 ### Endpoints recomendados para agregar:
 - `GET /ventas/producto/<product_id>`
@@ -73,7 +73,7 @@ SELECT status, COUNT(*) FROM orders GROUP BY status;
 
 ---
 
-## Justificación de Tecnologías
+## JustificaciOn de Tecnologias
 
 | Tecnología | ¿Por qué se eligió? |
 |------------|----------------------|
@@ -85,7 +85,7 @@ SELECT status, COUNT(*) FROM orders GROUP BY status;
 
 ---
 
-## 📦 Recomendaciones para producción
+## Recomendaciones para produccion
 
 - Usar Parquet en lugar de CSV para mejor performance
 - Agregar logs estructurados en CloudWatch
@@ -94,29 +94,29 @@ SELECT status, COUNT(*) FROM orders GROUP BY status;
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 duff_beer_etl_project/
 ├── app/                  # API REST Flask
-│   └── app.py
+�?  └── app.py
 ├── etl/                  # ETL transformador
-│   └── transform.py
+�?  └── transform.py
 ├── data/                 # Archivos de entrada simulados
-│   └── orders.csv
+�?  └── orders.csv
 ├── output/               # Datos transformados
-│   └── orders_summary.csv
+�?  └── orders_summary.csv
 ├── tests/                # Pruebas unitarias
-│   └── test_transform.py
+�?  └── test_transform.py
 ├── queries/              # SQL para Athena
-│   └── consultas.sql
+�?  └── consultas.sql
 ├── arquitectura_duff_beer_etl.png
 └── README.md
 ```
 
 ---
 
-## Cronología del proyecto
+## Cronologia del proyecto
 
 - Día 1: Diseño de arquitectura
 - Día 2: Implementación ETL y simulación Lambda
